@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MANACO — Productos</title>
+  <meta name="description" content="Landing de MANACO — muestra de productos destacados." />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <header>
+    <h1>MANACO</h1> <!-- único H1 -->
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+  <!-- contenido -->
+</main>
+
+    <section id="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Bienvenido a MANACO</h2>
+      <p>Soluciones y productos pensados para tus necesidades.</p>
+    </section>
+
+    <section id="productos" aria-labelledby="productos-title">
+      <h2 id="productos-title">Productos Destacados</h2>
+
+      <!-- contenedor semántico para la lista de productos -->
+      <ul role="list" aria-label="Lista de productos">
+        <li>
+          <article aria-labelledby="p1-title">
+            <h3 id="p1-title">Producto A</h3>
+            <p>Breve descripción del Producto A. Características principales y beneficios.</p>
+            <p><strong>Precio:</strong> $49</p>
+          </article>
+        </li>
+
+        <li>
+          <article aria-labelledby="p2-title">
+            <h3 id="p2-title">Producto B</h3>
+            <p>Breve descripción del Producto B. Ideal para uso en...</p>
+            <p><strong>Precio:</strong> $79</p>
+          </article>
+        </li>
+
+        <li>
+          <article aria-labelledby="p3-title">
+            <h3 id="p3-title">Producto C</h3>
+            <p>Breve descripción del Producto C. Destaca por su...</p>
+            <p><strong>Precio:</strong> $129</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="nosotros" aria-labelledby="nosotros-title">
+      <h2 id="nosotros-title">Sobre MANACO</h2>
+      <p>Información sobre la empresa, misión y valores.</p>
+    </section>
+
+    <section id="contacto" aria-labelledby="contacto-title">
+      <h2 id="contacto-title">Contacto</h2>
+      <address>
+        <p>Email: <a href="mailto:info@manaco.example">info@manaco.example</a></p>
+        <p>Tel: <a href="tel:+59160000000">+591 6000 0000</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="y"></span> MANACO</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
