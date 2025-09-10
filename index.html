@@ -1,134 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Título único (máx. ~60 caracteres) -->
-  <title>Landing MANACO | Calzado de calidad en Bolivia</title>
-
-  <!-- Meta descripción (150–160 caracteres) -->
-  <meta name="description" content="MANACO ofrece calzado de calidad en Bolivia. Descubre nuestra colección de zapatos duraderos y cómodos, diseñados para acompañarte en cada paso.">
-
-  <!-- Open Graph básico -->
-  <meta property="og:title" content="Landing MANACO | Calzado de calidad en Bolivia">
-  <meta property="og:description" content="Zapatos duraderos y cómodos para cada paso. Descubre la colección de MANACO en Bolivia.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/placeholder.jpg"> <!-- cambia luego por una imagen optimizada -->
-
-  <!-- Buenas prácticas -->
-  <meta name="robots" content="index, follow">
-</head>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MANACO — Productos</title>
-  <meta name="description" content="Landing de MANACO — muestra de productos destacados." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calzado MANACO - Impulsa tu paso</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <header>
+        <div>
+            <p class="logo">MANACO</p>
+        </div>
+        <div>
+            <!-- Menú dentro de nav para accesibilidad -->
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicio">Servicio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <h1>MANACO</h1> <!-- único H1 -->
-    <nav aria-label="Navegación principal">
-      <ul>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main id="main-content">
+        <section class="banner" id="inicio">
+            <h1>Calzado que impulsa tu paso</h1>
+        </section>
 
-<main id="main-content">
-  <section>
-    <h1>Calzado MANACO: calidad y tradición en Bolivia</h1>
-    <p>Descubre nuestros zapatos diseñados para durar, con estilo y confort.</p>
-  </section>
-</main>
-  <!-- contenido -->
+        <section class="Producto" aria-labelledby="productos-titulo">
+            <h2 id="productos-titulo" class="pr_titulo">Productos</h2>
 
-    <section id="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">Bienvenido a MANACO</h2>
-      <p>Soluciones y productos pensados para tus necesidades.</p>
-    </section>
+            <article class="p1">
+                <img src="pro1.jpg" alt="Zapato color negro">
+                <div>
+                    <h3>Producto 1</h3>
+                    <p>Precio: $00.00</p>
+                    <button type="button" aria-label="Comprar Producto 1">Comprar</button>
+                </div>
+            </article>
 
-    <section id="productos" aria-labelledby="productos-title">
-      <h2 id="productos-title">Productos Destacados</h2>
+            <article class="p2">
+                <img src="pro2.jpg" alt="Botín de cuero negro">
+                <div>
+                    <h3>Producto 2</h3>
+                    <p>Precio: $00.00</p>
+                    <button type="button" aria-label="Comprar Producto 2">Comprar</button>
+                </div>
+            </article>
 
-      <!-- contenedor semántico para la lista de productos -->
-      <ul role="list" aria-label="Lista de productos">
-        <li>
-          <article aria-labelledby="p1-title">
-            <h3 id="p1-title">Producto A</h3>
-            <p>Breve descripción del Producto A. Características principales y beneficios.</p>
-            <p><strong>Precio:</strong> $49</p>
-          </article>
-        </li>
-
-        <li>
-          <article aria-labelledby="p2-title">
-            <h3 id="p2-title">Producto B</h3>
-            <p>Breve descripción del Producto B. Ideal para uso en...</p>
-            <p><strong>Precio:</strong> $79</p>
-          </article>
-        </li>
-
-        <li>
-          <article aria-labelledby="p3-title">
-            <h3 id="p3-title">Producto C</h3>
-            <p>Breve descripción del Producto C. Destaca por su...</p>
-            <p><strong>Precio:</strong> $129</p>
-          </article>
-        </li>
-      </ul>
-    </section>
-
-    <section id="nosotros" aria-labelledby="nosotros-title">
-      <h2 id="nosotros-title">Sobre MANACO</h2>
-      <p>Información sobre la empresa, misión y valores.</p>
-    </section>
-
-    <section id="contacto" aria-labelledby="contacto-title">
-      <h2 id="contacto-title">Contacto</h2>
-      <address>
-        <p>Email: <a href="mailto:info@manaco.example">info@manaco.example</a></p>
-        <p>Tel: <a href="tel:+59160000000">+591 6000 0000</a></p>
-      </address>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="y"></span> MANACO</p>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+            <article class="p3">
+                <img src="pro3.jpg" alt="zapato negro de mujer">
+                <div>
+                    <h3>Producto 3</h3>
+                    <p>Precio: $00.00</p>
+                    <button type="button" aria-label="Comprar Producto 3">Comprar</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2025 MANACO</p>
+    </footer>
 </body>
 </html>
-<section class="productos">
-  <article>
-    <img src="producto1.jpg" alt="Zapato deportivo MANACO modelo X">
-    <h3>Zapato Deportivo</h3>
-    <p>$120</p>
-    <button>Comprar</button>
-  </article>
-
-  <article>
-    <img src="producto2.jpg" alt="Botín de cuero MANACO modelo Y">
-    <h3>Botín de Cuero</h3>
-    <p>$250</p>
-    <button>Comprar</button>
-  </article>
-
-  <article>
-    <img src="producto3.jpg" alt="Sandalia MANACO modelo Z">
-    <h3>Sandalia</h3>
-    <p>$90</p>
-    <button>Comprar</button>
-  </article>
-</section>
-<footer>
-  <p>Copyright 2025 MANACO</p>
-</footer>
